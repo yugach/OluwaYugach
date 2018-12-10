@@ -93,6 +93,23 @@ div.hero-image3 {
     background: rgba(0,0,0,0.3);
 }
 
+.but{
+	color:fuchsia;
+	 padding: 10px;
+	font-size:1.2rem;
+	border-radius: 10px;
+}
+
+.but:hover{
+	color: white;
+	background: rgb(1, 20, 24);
+	cursor: pointer;
+}
+
+.abut{
+    padding: 15px;
+}
+
 .column{
     float: left;
     width: 33.33%;
@@ -112,6 +129,10 @@ div.hero-image3 {
     content: "";
     display: table;
     clear: both;
+}
+
+.addr{
+    padding: 30px;
 }
 
 footer {
@@ -136,4 +157,50 @@ footer p{
     color:blue;
     text-align:center;
     margin-top: 100px;
+    font-size: xx-large;
+}
+
+.form-style{
+	border-left: 2px solid black;
+	width: fit-content;
+	background: antiquewhite;
+	padding: 20px;
+	border-radius: 15px;
+}
+
+label{
+    font-size: 1.5rem;
+}
+
+input[type=text],
+input[type=email]
+{
+    
+	padding: 10px;
+	border-radius: 10px;
+	width: 300px;
+	font-size: 1.2rem;
+}
+
+textarea{
+    	border-radius: 10px;
+	width: 380px;
+	height: 150px;
+	margin: 5px;
+}
+
+.send{
+	padding: 10px;
+	border-radius: 10px;
+	font-size: 1.2rem;
+	width: 100px;
+}
+
+.send:hover{
+	background:red;
+	color: grey;
+}
+
+h2, h3 {
+    color: blue;
 }
