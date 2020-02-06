@@ -1,0 +1,315 @@
+body,
+html {
+  height: 100%;
+  width: 100%;
+  background-color: lightblue;
+  margin: 0;
+}
+
+.topnav {
+  background-color: darkred;
+  overflow: hidden;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: darkorange;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav a:hover {
+  background-color: darkgoldenrod;
+  color: #000;
+}
+
+.topnav a:active {
+  background-color: darkgoldenrod;
+  color: white;
+}
+
+table {
+  width: 90%;
+  margin: 0 auto;
+}
+
+table,
+th,
+td {
+  border: 2px solid whitesmoke;
+  border-collapse: collapse;
+}
+th,
+td {
+  padding: 15px;
+  text-align: left;
+  font-size: 160%;
+}
+
+div.hero-imageIn,
+div.hero-imagePrice,
+div.hero-imageAbout,
+div.hero-imageMenu,
+div.hero-imageContact {
+  text-align: left;
+  position: absolute;
+  top: 44%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgb(240, 21, 21);
+  margin-top: 0%;
+}
+
+div.hero-text h1 {
+  font-size: 3em;
+  padding: 10px;
+  text-shadow: 2px 2px blanchedalmond;
+}
+
+div.hero-text a button {
+  color: black;
+  border-color: red;
+  background-color: white;
+  padding: 10px;
+}
+
+div.hero-imageIn,
+div.hero-imagePrice,
+div.hero-imageAbout,
+div.hero-imageMenu,
+div.hero-imageContact {
+  background-image: url("https://i.imgur.com/0wrhvW6.jpg");
+  height: 100vh;
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  border-image-width: auto;
+  background-size: cover;
+
+  position: relative;
+}
+
+div.hero-imageMenu {
+  background-image: url("https://i.imgur.com/JmKKQc5.jpg");
+  text-align: center;
+}
+
+div.hero-imageContact {
+  background-image: url("https://i.imgur.com/sHWDanU.jpg");
+  text-align: center;
+}
+
+div.hero-imageAbout {
+  background-image: url("https://i.imgur.com/opWWGq6.jpg");
+}
+
+.overlay {
+  height: inherit;
+  width: inherit;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.but {
+  color: fuchsia;
+  padding: 10px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+}
+
+.but:hover {
+  color: white;
+  background: rgb(1, 20, 24);
+  cursor: pointer;
+}
+
+.abut {
+  padding: 15px;
+}
+
+.menuMainCont {
+  margin-top: 20px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+.column img {
+  width: 25%;
+  height: auto;
+
+  transition: width 2s, height 2s, transform 1s;
+}
+
+.column img:hover {
+  width: 90%;
+  height: auto;
+  transform: rotate(360deg);
+}
+
+.row {
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.addr {
+  padding: 30px;
+}
+
+footer {
+  background-color: rgb(1, 20, 24);
+  text-align: center;
+  padding: 5px;
+}
+
+.abtParaDiv {
+  width: 95%;
+  margin: 0 auto;
+}
+
+#returnHome {
+  text-decoration: none;
+}
+
+.thanksDiv {
+  text-align: center;
+  display: none;
+}
+
+footer p {
+  color: gold;
+  font-size: 15px;
+}
+
+.foot img {
+  width: 20px;
+  height: 20px;
+  padding: 3px;
+}
+
+.fllwUs {
+  color: blue;
+  text-align: center;
+  margin-top: 100px;
+  font-size: xx-large;
+}
+
+.contForm {
+  width: fit-content;
+}
+
+.contForm h3 {
+  text-align: center;
+  font-size: 23px;
+}
+
+.form-style {
+  border-left: 2px solid black;
+  width: fit-content;
+  background: antiquewhite;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+label {
+  font-size: 1.5rem;
+}
+
+input[type="text"],
+input[type="email"] {
+  padding: 10px;
+  width: 300px;
+  font-size: 1.2rem;
+}
+
+textarea {
+  border-radius: 10px;
+  width: 380px;
+  height: 150px;
+  margin: 5px;
+}
+
+.send {
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  width: 100px;
+}
+
+.send:hover {
+  background: red;
+  color: grey;
+}
+
+h2,
+h3 {
+  color: blue;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a {
+    float: none;
+    display: block;
+    color: darkorange;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  .topnav {
+    background-color: darkred;
+    overflow: auto;
+  }
+
+  div.hero-imageIn,
+  div.hero-imageContact,
+  div.hero-imageAbout,
+  div.hero-imageMenu,
+  div.hero-imagePrice {
+    display: none;
+  }
+
+  body {
+    width: 100%;
+    margin: 0%;
+  }
+
+  .menuMainCont {
+    margin-top: 70px;
+  }
+
+  .column {
+    float: none;
+    width: 95%;
+    margin-bottom: 35px;
+  }
+
+  .column img {
+    width: 40%;
+    height: auto;
+
+    transition: width 2s, height 2s, transform 1s;
+  }
+
+  .column img:hover {
+    width: 90%;
+    height: auto;
+    transform: rotate(360deg);
+  }
+
+  .form-style {
+    padding: 10px;
+  }
+}
